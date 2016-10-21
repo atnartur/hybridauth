@@ -45,8 +45,8 @@ class Hybrid_Providers_Yandex extends Hybrid_Provider_Model_OAuth2
 		}
     
     $this->user->profile->identifier    = (property_exists($response,'id'))?$response->id:"";
-		$this->user->profile->firstName     = (property_exists($response,'real_name'))?$response->real_name:"";
-		$this->user->profile->lastName      = (property_exists($response,'family_name'))?$response->family_name:"";
+		$this->user->profile->firstName     = (property_exists($response,'first_name'))?$response->real_name:"";
+		$this->user->profile->lastName      = (property_exists($response,'last_name'))?$response->family_name:"";
 		$this->user->profile->displayName   = (property_exists($response,'display_name'))?$response->display_name:"";
 		$this->user->profile->photoURL      = 'http://upics.yandex.net/'. $this->user->profile->identifier .'/normal';
 		$this->user->profile->profileURL    = "";
