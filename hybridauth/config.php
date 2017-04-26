@@ -19,7 +19,7 @@ return
 				),
 				"Yahoo" => array(
 					"enabled" => true,
-					"keys" => array("key" => "", "secret" => ""),
+					"keys" => array("id" => "", "secret" => ""),
 				),
 				"AOL" => array(
 					"enabled" => true
@@ -45,7 +45,8 @@ return
 				),
 				"LinkedIn" => array(
 					"enabled" => true,
-					"keys" => array("key" => "", "secret" => "")
+					"keys" => array("key" => "", "secret" => ""),
+					"fields" => array()
 				),
 				"Foursquare" => array(
 					"enabled" => true,
